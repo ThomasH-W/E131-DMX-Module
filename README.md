@@ -1,8 +1,14 @@
 # E131 DMX Module
 
-Urpsrünglich wurde dieses Projekt unter eclipse realisiert.
+Ursprünglich wurde dieses Projekt unter eclipse realisiert.
 Da dies nicht unter VS Code kompiliert werden konnte, gibt es jetzt eine neue Version.
-Die HTML Seiten, aber die Frimware funktienrt auch ohne.
+Diese Firmware hat zwar keine Web-Oberfläche welche aber nur für die Konfiguration benötigt wird.
+Zwei Dateien sollten angepasst werden:
+	e1_pawword.h -> WiFi credentials
+	e1_global.h -> Konfiguration des Moduls
+
+Für die Kontroller der einzelenen Module gibt es einen Monitor:
+https://github.com/Snapstromegon/LightModules-Monitor
 
 
 http://www.hoeser-medien.de/2017/03/esp8266-dmx-modul-mit-web-server/ 
