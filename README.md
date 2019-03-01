@@ -7,7 +7,7 @@ Zwei Dateien sollten angepasst werden:
 	e1_pawword.h -> WiFi credentials
 	e1_global.h -> Konfiguration des Moduls
 
-Für die Kontroller der einzelenen Module gibt es einen Monitor:
+Für die Kontrolle der einzelenen Module gibt es einen Monitor:
 https://github.com/Snapstromegon/LightModules-Monitor
 
 
