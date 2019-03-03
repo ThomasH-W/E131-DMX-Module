@@ -18,6 +18,7 @@ typedef struct strConfig
   unsigned long moduleNum;
   unsigned long universe;
   unsigned long DxmPowerOffTime;
+  unsigned long DMXstartChannel;
   boolean DMXoutputOn;
   byte LEDconfig;
   unsigned long batAnalogRef;

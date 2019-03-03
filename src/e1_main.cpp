@@ -71,6 +71,11 @@ void esp_info()
   strEspInfo += buf;
   strEspInfo += "<br>";
 
+  strEspInfo += "DMX512 RED  :";
+  itoa(e1c.e1config.DMXstartChannel, buf, 10);
+  strEspInfo += buf;
+  strEspInfo += "<br>";
+
   strEspInfo += "LEDconfig   :";
   itoa(e1c.e1config.LEDconfig, buf, 10);
   strEspInfo += buf;
@@ -83,6 +88,7 @@ void esp_info()
 void server_init()
 {
   server.on("/", []() { esp_info(); });
+  server.on("/dmx", []() { esp_info(); });
 
   // server.on("/update-pull", firwmareUpdateFixed);
 

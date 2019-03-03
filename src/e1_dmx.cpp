@@ -450,6 +450,7 @@ void DMX_Init()
 
     dmxCh = e1c.e1config.deviceNum * DMX_SET + e1c.e1config.moduleNum * 3;
     dmxStartChannel = 1 + dmxCh;
+    e1c.e1config.DMXstartChannel = dmxStartChannel;
     DMX_RED = 0 + dmxCh;
     DMX_GREEN = 1 + dmxCh;
     DMX_BLUE = 2 + dmxCh;
