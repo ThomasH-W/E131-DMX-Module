@@ -74,7 +74,7 @@ void esp_info()
   strEspInfo += "DMX512 RED  :";
   itoa(e1c.e1config.DMXstartChannel, buf, 10);
   strEspInfo += buf;
-  strEspInfo += "<br>";
+  strEspInfo += " ( deviceNum * DMX_SET + moduleNum * 3 ) <br>";
 
   strEspInfo += "LEDconfig   :";
   itoa(e1c.e1config.LEDconfig, buf, 10);
