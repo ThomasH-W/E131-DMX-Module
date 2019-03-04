@@ -5,7 +5,7 @@
 #include <ESP8266WiFi.h>
 
 #ifdef PASSWORD_THOMAS
-#include "e1_password_th.h"
+#include "e1_password_thomas.h"
 #else
 #include "e1_password.h"
 #endif

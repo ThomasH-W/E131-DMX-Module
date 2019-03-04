@@ -7,7 +7,7 @@
 .piolibdeps
 .clang_complete
 .gcc-flags.json
-src/e1_password_th.h
+src/e1_password_thomas.h
 build
 platformio.ini
 
