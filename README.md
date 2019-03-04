@@ -2,10 +2,11 @@
 
 Ursprünglich wurde dieses Projekt unter eclipse realisiert.
 Da dies nicht unter VS Code kompiliert werden konnte, gibt es jetzt eine neue Version.
-Diese Firmware hat zwar keine Web-Oberfläche welche aber nur für die Konfiguration benötigt wird.
+Diese Firmware hat zwar nur zwei Web-Seiten welche für die Konfiguration benötigt werden.
 Zwei Dateien sollten angepasst werden:
 	e1_pawword.h -> WiFi credentials
 	e1_global.h -> Konfiguration des Moduls
+	platformio.ini -> Auwahl der password-Datei via build flag
 
 Für die Kontrolle der einzelenen Module gibt es einen Monitor:
 https://github.com/Snapstromegon/LightModules-Monitor
