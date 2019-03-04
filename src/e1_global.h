@@ -1,3 +1,4 @@
+#pragma once
 #ifndef E1_GLOBAL_H
 #define E1_GLOBAL_H
 
@@ -67,5 +68,10 @@ void battery_getval(void);
 uint8_t getConfigLED(void);
 void WifiStopAP();
 void WifiSignal(void);
+
+void WriteConfig(void);
+void EraseConfig(void);
+void ConfigureWifi(void);
+void dmx_serial_init(void);
 
 #endif

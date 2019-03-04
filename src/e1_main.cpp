@@ -4,6 +4,11 @@
 */
 #include "e1_main.h"
 
+/*
+Include the HTML, STYLE and Script "Pages"
+*/
+#include "e1_Page_DMX.h"
+
 // ------------------------------------------------------------------------------------- HTTPUpdateConnect
 // start update server protected with password defined in global.h
 /*
@@ -21,13 +26,17 @@ void HTTPUpdateConnect()
 // attach the WEB pages to the server
 void esp_reset()
 {
-  String MessageString = "RESET...";
+  String MessageString = "RESET ...";
   e1c.esp_status = "RESET";
   e1c.esp_level = 0;
   NodeServer_text_Multicast(MessageString);
   delay(50);
   ESP.restart();
 }
+
+// for future use */
+void EraseConfig() { Serial.print("EraseConfig"); }
+void WriteConfig() { Serial.print("WriteConfig"); }
 
 // ------------------------------------------------------------------------------------- server_reply
 void server_reply(String message)
@@ -88,7 +97,8 @@ void esp_info()
 void server_init()
 {
   server.on("/", []() { esp_info(); });
-  server.on("/dmx", []() { esp_info(); });
+  // server.on("/dmx", []() { esp_info(); });
+  server.on("/dmx", send_DMX_configuration_html);
 
   // server.on("/update-pull", firwmareUpdateFixed);
 

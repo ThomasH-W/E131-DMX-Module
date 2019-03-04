@@ -93,9 +93,18 @@ byte Minute_Old = 100; // Helpvariable for checking, when a new Minute comes up 
 #define update_bin "/ucls/ESP12E_E131_DMX.bin"
 #define update_file "http://192.168.179.4/ucls/update/ESP12E_E131_DMX.bin"
 
-void WriteConfig(void);
-void EraseConfig(void);
-void ConfigureWifi(void);
-void dmx_serial_init(void);
+extern uint16_t uiDMXRed;   // raw DMX data
+extern uint16_t uiDMXGreen; // raw DMX data
+extern uint16_t uiDMXBlue;  // raw DMX data
+extern uint16_t uiDMXRed2;  // raw DMX data
+
+extern int DMX_RED;
+extern int DMX_GREEN;
+extern int DMX_BLUE;
+extern int DMX_RED2;
+
+extern uint16_t dmxGammaPerc;
+extern uint16_t dmxCh;
+extern unsigned long udpPacketCount;
 
 #endif
