@@ -4,14 +4,13 @@
  *  Created on: 04.03.2017
  *      Author: Thomas
  */
-
 #ifndef PASSWORD_H_
 #define PASSWORD_H_
 
-#warning **** e1_password.h: Using Settings from this File ****
+#warning **** e1_password_th.h: Using Settings from this File ****
 
-#define WIFI_SSID "myssis"
-#define WIFI_PASS "mysecretpass"
+#define WIFI_SSID "thomasssid"
+#define WIFI_PASS "thomassecretpass"
 
 #define ACCESS_POINT_NAME "ESP-Accesspoint"
 #define ACCESS_POINT_PASSWORD "12345678"

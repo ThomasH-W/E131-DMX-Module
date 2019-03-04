@@ -8,8 +8,6 @@ E131 e131;
 
 E1CONFIG e1c;
 
-#include "e1_password.h"
-
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>

@@ -8,6 +8,7 @@
 .clang_complete
 .gcc-flags.json
 src/user_config_override.h
+e2_password_th.h
 build
 platformio.ini
 .gitignore

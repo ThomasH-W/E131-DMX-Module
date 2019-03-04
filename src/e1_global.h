@@ -4,6 +4,12 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 
+#ifdef PASSWORD_THOMAS
+#include "e1_password_th.h"
+#else
+#include "e1_password.h"
+#endif
+
 #define FIRMWARE "v3.26 2018-02-02"
 #define DEVICE_NAME "ucl-01-spot" // default name for factory reset
 #define NODE_PORT 45131
@@ -29,7 +35,6 @@ LEDconfig	0			Asssign LED RGBR to GPIO Pin1 - NodeMCU 14-13-12-152 - Mini 1  1
 */
 
 #include "e1_config.h"
-#include "e1_password.h"
 
 #define Button1 0   // D3  = GPIO  0
 #define Button2 D10 // D10 = GPIO  xx
